@@ -6,7 +6,8 @@ from matplotlib import rcParams
 from string import punctuation
 rcParams['text.usetex'] = True
 
-stopwords = open('./stopwords.txt').read().splitlines()
+stopwords = open('./data/stopwords.txt').read().splitlines()
+stopwords += open('./data/aliem-stopwords').read().splitlines()
 months = ['January','February','March','April','May','June','July','August',
 			'September','October','November','December']
 
